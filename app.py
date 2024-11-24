@@ -112,7 +112,7 @@ if input_text:
         st.write(f"General Sentiment: {general_sentiment_label}")
         
         # Extract aspects using LDA
-        aspects = extract_aspects(input_text, n_topics=3, n_words=5)
+        aspects = extract_aspects(input_text, n_topics=10, n_words=10)
         
         # Predict sentiment for each aspect and store the results
         sentiment_data = []
